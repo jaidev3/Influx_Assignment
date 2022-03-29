@@ -1,3 +1,5 @@
+
+
 var obj = {};
 let nameGroup = "Jaidev";
 let member1 = { name: "Nrupul", expenses: [] };
@@ -6,6 +8,7 @@ let member3 = { name: "Vishakha", expenses: [] };
 let expense = 30;
 let individualExpenseArray = [];
 let totalSum = 0;
+
 
 var tripGroup = (nameGroup) => {
   if (obj[nameGroup] == undefined) {
@@ -69,6 +72,8 @@ let splitBill = () => {
 
 /////main function///
 function main() {
+  var start = Date.now();
+
   tripGroup(nameGroup);
   //console.log(obj);
   addMember(member1);
@@ -81,6 +86,8 @@ function main() {
   // console.log(obj.Jaidev);
 
   splitBill();
+  var end = Date.now();
+  console.log(`Execution time: ${end - start} ms`);
 }
 
 main();
