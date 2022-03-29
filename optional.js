@@ -10,11 +10,13 @@ var tripGroup = (nameGroup) => {
   }
   //   console.log(obj);
 };
+tripGroup(nameGroup)
+
 
 //////////adding 10 members/////////////////
 var addMember = () => {
   for (let i = 0; i < 10; i++) {
-    obj.Jaidev.push({ name: `member${i + 1}` });
+    obj.Jaidev.push({ name: `member${i + 1}`,expenses:[] });
   }
   console.log(obj.Jaidev);
 };
@@ -86,4 +88,4 @@ function main() {
   splitBill();
 }
 
-main();
+// main();
